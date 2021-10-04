@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <div class="nav-container">
+            <header>
+                <a href="index.html" class="logo">Yesenia Quezada</a>
+                <nav>
+                    <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">about</a></li>
+                    </ul>
+                </nav>
+            </header>
+             <div class="social-header">
+                <ul>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/yesenia-quezada/"><img src="images/linkedin.png" alt="Linkedin"</a>  </li>
+                    <li><a target="_blank" href="https://github.com/yrdquezada"><img src="images/github-big-logo.png" alt="Github"</a> </li>
+                    <li><a target="_blank" href="https://google.qwiklabs.com/public_profiles/8c25da74-5ac4-4354-a58b-d2311e702e8b"><img src= "images/google-cloud.png" alt="Skillbadges"></a></li>
+                </ul>
+            </div>
+    </div>
+    
+    <div class="hero">
+        <div class="content">
+            <h1>Hi <span class="wave">👋🏾</span></h1>
+            <p>I'm Yesenia Quezada and I am building</p>
+            <h2>100 Projects in 100 days.</h2>
+            <p>You can follow the project <a href="projects.html"> here <a/></p>
+        </div>
+    </div>
+    <div>
+        <!--hero anomation here it will show on she side-->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+        tl.from('.content',{
+            y: '-30%%',
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
+        })
+tl.from('.hero-design', {
+    opacity: 0, y: 50,  ease: Power4.easeOut, duration: 1
+},"-=2")
+
+gsap.from(".square-anim", {
+    stagger: .2,
+    scale: 0.1,
+    duration: 1,
+    ease: Back.easeOut.config(1.7),
+})
+    </script>    
+</body>
+</html>
+
+
+
+
+
