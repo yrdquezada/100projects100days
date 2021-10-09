@@ -46,9 +46,6 @@ header{
         }
 }
 
-.social-header, .hero-design{
-    display: none;
-}
 
 .hero{
     background: #192734;
@@ -185,7 +182,7 @@ section{
 }
 
 
-@media only screen and (min-width: 800px) {
+
     .feature, .portfolio {
         text-align: left;
     }
@@ -208,9 +205,8 @@ section{
         }
     }  
 
-}
 
-@media only screen and (min-width: 1050px) {
+
     .hero {
         height: 90vh;
     }
@@ -266,7 +262,7 @@ section{
             }
         }
     }
-}
+
 
 @media only screen and (min-width: 1250px) {
     header {
