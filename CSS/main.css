@@ -65,13 +65,12 @@ header ul a {
 .hero h1 {
   font-weight: bold;
   color: #E17108;
-  opacity: 50%;
+  opacity: 90%;
 }
 
 .hero h2 {
   font-weight: bold;
-  color: #E17108;
-  opacity: 50%;
+  color: white;
 }
 
 .wave {
@@ -191,7 +190,7 @@ section {
   font-weight: bold;
   color: #E17108;
   letter-spacing: .2em;
-  font-size: .85em;
+  font-size: .90em;
 }
 
 .feature-tittle {
@@ -221,6 +220,8 @@ section {
 .projects-list {
   color: #E17108;
   text-align: left;
+  padding: 0 auto;
+  margin-top: auto;
 }
 
 .projects-list a {
