@@ -53,16 +53,10 @@ h1 {
   
 }
 
-.fa-plus-circle{
-    position: absolute;
-    font-size: 40px;
-    color: #4162f6;
-}
 
 #date{
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    left: 150px;
     color: #FFF;
     font-size: 25px;
     font-family: 'poppins', sans-serif;
