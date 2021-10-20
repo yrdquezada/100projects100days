@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/survey-form.css">
+    <title>Survey form</title>
+</head>
+<body>
+     <div class="main">
+         <h1 id="title">Survey form</h1>
+         <p id="description">Thank you for taking the time to help me improve my website</p>
+         <div class="main-content">
+            <div class="form-content">
+                <form id="survey-form">
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" id="name" required placeholder="Enter your name" name="name">
+                  
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" id="email"  required placeholder="Enter your email" name="email">
+                    
+                        <label for="number" id="number-label">Enter your rate from 1 to 10</label>
+                        <input type="number" id="number" min="1" max="10" required placeholder="Enter your rate">
+                   
+                        <label for="dropdown">Which option best describes your current role?</label>
+                        <select id="dropdown">
+                        <option value="student">Student</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                        <option value="other">other</option>
+                        </select>
+
+                        <fieldset>
+                        <legend>Would you recommend my website to a friend?</legend>
+                        <input type="radio" name="action" check id="definitely" value="definitely">
+                        <label for="definitely">Definitely</label><br/>
+
+                        <input type="radio" name="action" id="maybe" value="maybe">
+                        <label for="maybe">Maybe</label><br/>
+
+                        <input type="radio" name="action" id="not-sure" value="not-sure">
+                        <label for="not-sure">Not sure</label><br/>
+
+                        <input type="radio" name="action" id="no" value="no">
+                        <label for="no">NO</label><br/>
+                        </fieldset>
+
+                        <p>What type of project would you like to see</p>
+                        <input type="checkbox" id="html-projects" name="html-projects" value="html-projects">
+                        <label for="html-project">HTML Projects</label><br/>
+                        <input type="checkbox" id="retro-games" name="retro-games" value="retro-games">
+                        <label for="retro-games">Retro Games</label><br/>
+                        <input type="checkbox" id="other" name="other" value="other">
+                        <label for="other">Other</label><br/>
+
+                        <label for="comment">Any comments or suggestions?</label>
+                        <textarea rows="4" cols="50" id="comment">Enter your comment here...</textarea>
+
+                        <button type="submit" id="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>    
+     </div>
+       
+</body>
+</html>
