@@ -8,6 +8,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     border-style: solid;
+    background-color: rgb(97, 207, 97);
+    border-color:  darkgreen;
+    border-width: 5px;
+    
   }
   
   .grid div {
@@ -20,8 +24,9 @@ body {
   }
   
   .apple {
-    background-color: red;
-    border-radius: 20px;
+   background-image: url("../images/food.png");
+   background-repeat: no-repeat;
+   background-size: 100%;
   }
 
   .start {
