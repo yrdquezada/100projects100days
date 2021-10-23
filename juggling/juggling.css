@@ -1,0 +1,72 @@
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #002;
+}
+
+#preload-juggle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    text-align: center;
+
+}
+
+#preload-juggle .balls{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 150px;
+    margin-left: 150px;
+    border-radius: 15px;
+    background-color: #1bbc9b;
+    animation: juggle 2.1s linear infinite;
+
+}
+
+#preload-juggle .balls:nth-child(2){
+    animation-delay: -0.7s;
+}
+#preload-juggle .balls:nth-child(3){
+    animation-delay: -1.4s;
+}
+@keyframes juggle{
+    0%{
+        transform: translateX(0px) translateY(0px);
+    }
+    12.5%{
+        transform: translateX(27.5px) translateY(-57px) scale(1.1);
+        background: #d6156f;
+    }
+    25%{
+        transform: translateX(55px) translateY(0px);
+        animation-timing-function: ease-out;
+    }
+    37.5%{
+        transform: translateX(27.5px) translateY(57px);
+        background: chartreuse;
+    }
+    50%{
+        transform: translateX(0px) translateY(0px);
+    }
+    62.5%{
+        transform: translateX(27.5px) translateY(-57px)
+        scale(1.1);
+        animation-timing-function: ease-in;
+    }
+    75%{
+        transform: translateX(-55px) translateY(0px);
+    }
+    87.5%{
+        transform: translateX(-27.5px) translateY(57px);
+    }
+    100%{
+        transform: translateX(0px) translateY(0px);
+    }
+}
